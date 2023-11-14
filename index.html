@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Food Form</title>
+  
+</head>
+<body>
+<a href="" class="btn btn-success" data-toggle="modal" data-target="#payment">Payment_student</a>
+<!-- View info-student -->
+<div class="modal fade" id="payment" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="userModalLabel">Payment Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <h2>Payment (SPI)</h2>
+  <form action="process_form.php" method="post">
+      
+  <div class="mb-3">
+      <label for="student_id" class="form-label">Student ID </label>
+      <input type="text" class="form-control" id="student_id" name="student_id" required>
+    </div>
+    <!-- Food Input -->
+    <div class="mb-3">
+      <label for="price_food" class="form-label">Price Food</label>
+      <input type="number" class="form-control" id="price_food" name="price_food" required>
+    </div>
+
+    <!-- Rice Input -->
+    <div class="mb-3">
+      <label for="rice" class="form-label">Price Rice</label>
+      <input type="number" class="form-control" id="price_rice" name="price_rice" step="0.1" required>
+    </div>
+    <div class="mb-3">
+      <label for="rice" class="form-label">Rice(kg)</label>
+      <input type="number" class="form-control" id="rice_kg" name="rice_kg" step="0.1" required>
+    </div>
+    <div class="form-group">
+    <label>Months:</label><br>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="january" id="january" value="January">
+        <label class="form-check-label" for="january">January</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="february" id="february" value="February">
+        <label class="form-check-label" for="february">February</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="march" id="march" value="March">
+        <label class="form-check-label" for="march">March</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="april" id="april" value="April">
+        <label class="form-check-label" for="april">April</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="may" id="may" value="May">
+        <label class="form-check-label" for="may">May</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="june" id="june" value="June">
+        <label class="form-check-label" for="june">June</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="july" id="july" value="July">
+        <label class="form-check-label" for="july">July</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="august" id="august" value="August">
+        <label class="form-check-label" for="august">August</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="september" id="september" value="September">
+        <label class="form-check-label" for="september">September</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="october"  id="october" value="October">
+        <label class="form-check-label" for="october">October</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="november" id="november" value="November">
+        <label class="form-check-label" for="november">November</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="december" id="december" value="December">
+        <label class="form-check-label" for="december">December</label>
+    </div>
+</div>
+ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-danger" name="buttonn" value="Payment">
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+<!-- END view_guardian -->
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
